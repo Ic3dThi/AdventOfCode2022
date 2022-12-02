@@ -13,3 +13,4 @@ for line in inputList:
 elves.sort(reverse=True)
 print("Max: " + str(elves[0]))
 print("Top 3 total: " + str(elves[0] + elves[1] + elves[2]))
+inputFile.close()
