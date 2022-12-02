@@ -1,6 +1,5 @@
 #Advent of Code 2022 12 02
 #Author: ya boi
-#part 1
 inputFile = open("adventOfCode_Day02_Input.txt", "r")
 inputList = inputFile.readlines()
 rpsScores = {"X": 1,"Y": 2, "Z": 3}
