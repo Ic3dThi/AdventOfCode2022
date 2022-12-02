@@ -2,13 +2,14 @@
 #Author: ya boi
 inputFile = open("adventOfCodeInput_Day01.txt", 'r')
 inputList = inputFile.readlines()
-max = 0
 curr = 0
+elves = []
 for line in inputList:
     if line == "\n":
+        elves.append(curr)
         curr = 0
     else:
         curr += int(line)
-    if curr > max:
-        max = curr
-print(max)
+elves.sort(reverse=True)
+print("Max: " + str(elves[0]))
+print("Top 3 total: " + str(elves[0] + elves[1] + elves[2]))
