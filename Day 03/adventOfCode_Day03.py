@@ -1,4 +1,4 @@
-#Advent of Code 2022 12 02
+#Advent of Code 2022 12 03
 #Author: ya boi
 inputFile = open("adventOfCode_Day03_Input.txt", "r")
 inputList = inputFile.readlines()
