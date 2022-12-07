@@ -7,29 +7,29 @@ class Day06():
         pass
     def p1(self):
         line = inputList[0]
-        test = ""
+        text = ""
         maxLength = -1
         for x in range(len(line)):
             c = list(line)[x]
             current = "".join(c)
-            if (current in test):
-                test = test[test.index(current) + 1:]
-            test = test + "".join(c)
-            maxLength = max(len(test), maxLength)
+            if (current in text):
+                text = text[text.index(current) + 1:]
+            text = text + "".join(c)
+            maxLength = max(len(text), maxLength)
             if maxLength == 4:
                 print(x+1)
                 break
     def p2(self):
         line = inputList[0]
-        test = ""
+        text = ""
         maxLength = -1
         for x in range(len(line)):
             c = list(line)[x]
             current = "".join(c)
-            if (current in test):
-                test = test[test.index(current) + 1:]
-            test = test + "".join(c)
-            maxLength = max(len(test), maxLength)
+            if (current in text):
+                text = text[text.index(current) + 1:]
+            text = text + "".join(c)
+            maxLength = max(len(text), maxLength)
             if maxLength == 14:
                 print(x+1)
                 break
